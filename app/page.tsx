@@ -11,7 +11,7 @@ const Brand = {
 
 function Badge({ children }: { children: React.ReactNode }) {
   return (
-    <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80">
+    <span className="inline-flex items-center rounded-full border border-emerald-400/20 bg-emerald-400/10 px-3 py-1 text-xs text-white/85">
       {children}
     </span>
   );
@@ -20,7 +20,7 @@ function Badge({ children }: { children: React.ReactNode }) {
 function SectionTitle({ kicker, title, desc }: { kicker: string; title: string; desc?: string }) {
   return (
     <div className="mx-auto max-w-2xl text-center">
-      <div className="text-sm font-medium text-white/70">{kicker}</div>
+      <div className="text-sm font-medium text-emerald-200/80">{kicker}</div>
       <h2 className="mt-2 text-3xl font-semibold tracking-tight text-white md:text-4xl">{title}</h2>
       {desc ? <p className="mt-3 text-base text-white/70">{desc}</p> : null}
     </div>
@@ -32,7 +32,7 @@ export default function Home() {
     <div className="min-h-screen bg-neutral-950 text-white">
       {/* Background */}
       <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
-        <div className="absolute left-1/2 top-[-10%] h-[600px] w-[900px] -translate-x-1/2 rounded-full bg-gradient-to-r from-indigo-600/30 via-fuchsia-600/20 to-cyan-600/20 blur-3xl" />
+        <div className="absolute left-1/2 top-[-10%] h-[600px] w-[900px] -translate-x-1/2 rounded-full bg-gradient-to-r from-emerald-500/25 via-indigo-600/20 to-cyan-600/15 blur-3xl" />
         <div className="absolute bottom-[-15%] left-[-10%] h-[500px] w-[500px] rounded-full bg-emerald-500/10 blur-3xl" />
       </div>
 
@@ -58,7 +58,7 @@ export default function Home() {
             FAQ
           </a>
           <a
-            className="rounded-full bg-white px-4 py-2 text-sm font-semibold text-neutral-900 hover:bg-white/90"
+            className="rounded-full bg-emerald-400 px-4 py-2 text-sm font-semibold text-neutral-950 hover:bg-emerald-300"
             href="#cta"
           >
             Empezar
@@ -90,7 +90,7 @@ export default function Home() {
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
               <a
                 href="#cta"
-                className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-neutral-900 hover:bg-white/90"
+                className="inline-flex items-center justify-center rounded-full bg-emerald-400 px-6 py-3 text-sm font-semibold text-neutral-950 hover:bg-emerald-300"
               >
                 Quiero acceso (MVP)
               </a>
@@ -276,7 +276,7 @@ export default function Home() {
               <div className="mt-3 text-sm text-white/60">Anual (promo)</div>
               <div className="mt-1 text-3xl font-semibold">{priceYearlyA}</div>
               <div className="mt-1 text-sm text-white/60">Ahorra vs mensual</div>
-              <a href="#cta" className="mt-6 inline-flex w-full justify-center rounded-2xl bg-white px-4 py-3 text-sm font-semibold text-neutral-900 hover:bg-white/90">
+              <a href="#cta" className="mt-6 inline-flex w-full justify-center rounded-2xl bg-emerald-400 px-4 py-3 text-sm font-semibold text-neutral-950 hover:bg-emerald-300">
                 Empezar anual
               </a>
               <ul className="mt-6 space-y-2 text-sm text-white/70">
@@ -346,7 +346,7 @@ export default function Home() {
 
         {/* CTA */}
         <section id="cta" className="mt-24">
-          <div className="rounded-3xl bg-gradient-to-r from-indigo-600/30 via-fuchsia-600/20 to-cyan-600/20 p-8 ring-1 ring-white/10 md:p-10">
+          <div className="rounded-3xl bg-gradient-to-r from-emerald-500/25 via-emerald-400/15 to-cyan-600/15 p-8 ring-1 ring-white/10 md:p-10">
             <div className="mx-auto max-w-3xl text-center">
               <h3 className="text-2xl font-semibold tracking-tight md:text-3xl">¿Listo para construir y vender?</h3>
               <p className="mt-3 text-sm text-white/80 md:text-base">
@@ -355,7 +355,7 @@ export default function Home() {
               <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
                 <Link
                   href="mailto:imsebarz@gmail.com?subject=ShipFront%20Academy%20-%20Quiero%20acceso&body=Hola%2C%20quiero%20acceso%20al%20MVP.%20Mi%20nombre%3A%20%0A%0A"
-                  className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-neutral-900 hover:bg-white/90"
+                  className="inline-flex items-center justify-center rounded-full bg-emerald-400 px-6 py-3 text-sm font-semibold text-neutral-950 hover:bg-emerald-300"
                 >
                   Enviar correo (MVP)
                 </Link>
